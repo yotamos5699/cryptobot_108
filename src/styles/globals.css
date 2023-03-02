@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white;
+}
+
+@layer components {
+  .row1 {
+    @apply grid  grid-cols-6 items-center justify-center 
+     text-center;
+  }
+  .pair1 {
+    @apply inline-block h-[8vh] w-[30vh] border-2 border-white align-middle text-white;
+  }
+
+  .row2 {
+    @apply relative flex w-1/2;
+  }
+  .pair2 {
+    @apply inline-block h-[8vh] w-[30vh] border-2 border-white align-middle text-xl text-white;
+  }
+  .P1 {
+    @apply flex w-full flex-row-reverse justify-between gap-4 text-xl;
+  }
+  .S1 {
+    @apply flex flex-row-reverse gap-4;
+  }
+  .link1 {
+    @apply flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20;
+  }
+}
